@@ -6,6 +6,7 @@
 
 //!  121822.0826        FUNCTIONS
 
+
  let getConfig = function () {
    console.log("hello");
    let url = "".concat(baseURL, "configuration?api_key=", APIKEY);
@@ -21,7 +22,7 @@
        runSearch("game of thrones");
      })
      .catch(function (err) {
-       alert/watch(err);
+       alert(err);
      });
  };
 

@@ -4,8 +4,6 @@
  let configData = null;
  let baseImageURL = null;
 
-//!  121822.0826        FUNCTIONS
-
  let getConfig = function () {
    console.log("hello");
    let url = "".concat(baseURL, "configuration?api_key=", APIKEY);
@@ -18,19 +16,17 @@
        configData = data.images.config_data;
        console.log("config", data);
        console.log("config fetched");
-       runSearch("game of thrones");
+       runSearch("jaws");
      })
      .catch(function (err) {
-       alert/watch(err);
+       alert(err);
      });
  };
-
-
 
  let runSearch = function (keyword) {
    let url = "".concat(
      baseURL,
-     "search/tv?api_key=",
+     "search/movie?api_key=",
      APIKEY,
      "&query=",
      keyword
@@ -44,9 +40,12 @@
          4
        );
      });
- };
 document.addEventListener('DOMContentLoaded', getConfig)
+// let configData = null;
 
+// let baseImageURL = null;
+
+//!  121822.0826        FUNCTIONS
 
 const init = function () {
   main();
@@ -60,11 +59,11 @@ window.onload = function () {
 //!  123122.1839        MAIN
 
 const main = function () {
-    
-    
+  // const APIKEY = "ca1f26ba6eb2ba4fb641257b39d3bea7";
+ 
+
 };
 
-// const APIKEY = "ca1f26ba6eb2ba4fb641257b39d3bea7";
 //  SAMPLE URLS
 
 // 1. To get the config data like image base urls

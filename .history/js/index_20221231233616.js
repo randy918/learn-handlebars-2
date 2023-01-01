@@ -4,8 +4,6 @@
  let configData = null;
  let baseImageURL = null;
 
-//!  121822.0826        FUNCTIONS
-
  let getConfig = function () {
    console.log("hello");
    let url = "".concat(baseURL, "configuration?api_key=", APIKEY);
@@ -21,11 +19,9 @@
        runSearch("game of thrones");
      })
      .catch(function (err) {
-       alert/watch(err);
+       alert(err);
      });
  };
-
-
 
  let runSearch = function (keyword) {
    let url = "".concat(
@@ -39,7 +35,7 @@
      .then((result) => result.json())
      .then((data) => {
        document.getElementById("output").innerHTML = JSON.stringify(
-         data,
+         result.json,
          null,
          4
        );
@@ -47,6 +43,7 @@
  };
 document.addEventListener('DOMContentLoaded', getConfig)
 
+//!  121822.0826        FUNCTIONS
 
 const init = function () {
   main();

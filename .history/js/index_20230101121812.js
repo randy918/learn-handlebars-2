@@ -4,7 +4,7 @@
  let configData = null;
  let baseImageURL = null;
 
-//!  121822.0826        FUNCTIONS
+
 
  let getConfig = function () {
    console.log("hello");
@@ -21,7 +21,7 @@
        runSearch("game of thrones");
      })
      .catch(function (err) {
-       alert/watch(err);
+       alert(err);
      });
  };
 

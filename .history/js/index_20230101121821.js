@@ -21,7 +21,7 @@
        runSearch("game of thrones");
      })
      .catch(function (err) {
-       alert/watch(err);
+       alert(err);
      });
  };
 
